@@ -1,0 +1,24 @@
+name: taller-cassandra
+
+services:
+  cassandra3:
+    image: cassandra:5.0.8
+    container_name: cassandra3
+    hostname: cassandra3
+    ports:
+      - "7000:7000"
+      - "9042:9042"
+    environment:
+      MAX_HEAP_SIZE: 1024M
+      HEAP_NEWSIZE: 256M
+      CASSANDRA_CLUSTER_NAME: UFM-G4
+      CASSANDRA_DC: dc-g4
+      CASSANDRA_ENDPOINT_SNITCH: GossipingPropertyFileSnitch
+      CASSANDRA_SEEDS: "192.168.50.1"
+      CASSANDRA_BROADCAST_ADDRESS: "192.168.50.2"
+    volumes:
+      - cassandra3-data:/var/lib/cassandra
+      - ./data:/data:ro
+
+volumes:
+  cassandra3-data:

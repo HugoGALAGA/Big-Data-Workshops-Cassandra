@@ -1,0 +1,33 @@
+
+ sensor_id | sitio_id | tipo        | instalado_en
+-----------+----------+-------------+---------------------------------
+     se005 |     si04 | temperatura | 2026-06-10 00:00:00.000000+0000
+
+(1 rows)
+
+ leida_en | valor
+----------+-------
+
+
+(0 rows)
+
+ generada_en                     | sensor_id | tipo        | nivel   | mensaje
+---------------------------------+-----------+-------------+---------+-----------------------------------
+ 2026-09-30 21:02:08.000000+0000 |     se051 |     presion | crítica |   presion fuera de rango: 1029.69
+ 2026-09-30 15:43:02.000000+0000 |     se012 |     humedad |   media |     humedad fuera de rango: 89.83
+ 2026-09-28 21:18:58.000000+0000 |     se060 | temperatura | crítica | temperatura fuera de rango: 34.88
+ 2026-09-28 18:40:55.000000+0000 |     se017 |   vibracion | crítica |   vibracion fuera de rango: 11.93
+ 2026-09-28 18:33:00.000000+0000 |     se048 |     humedad | crítica |     humedad fuera de rango: 89.81
+ 2026-09-28 17:10:04.000000+0000 |     se034 |   vibracion | crítica |   vibracion fuera de rango: 11.98
+ 2026-09-28 15:42:06.000000+0000 |     se031 | temperatura |   media | temperatura fuera de rango: 34.95
+ 2026-09-28 10:33:03.000000+0000 |     se058 |     humedad |   media |     humedad fuera de rango: 89.62
+ 2026-09-27 20:07:44.000000+0000 |     se034 |   vibracion |    alta |   vibracion fuera de rango: 11.92
+ 2026-09-27 15:19:46.000000+0000 |     se032 |   vibracion | crítica |   vibracion fuera de rango: 11.97
+
+(10 rows)
+
+ lecturas | maximo
+----------+--------
+        0 |   null
+
+(1 rows)
